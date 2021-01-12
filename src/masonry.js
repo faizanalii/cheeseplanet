@@ -4,11 +4,11 @@ import billie from './Images/billie.jpg';
 import Masonry from "react-masonry-component";
 import pizzawall from './Images/pizzawall.jpg';
 import baker from './Images/baker.jpg';
-import pizzafire from './Images/pizzafire.jpg';
 import beef from './Images/beef.jpg';
 import fries from './Images/fries.jpg';
 import beef_burger from './Images/beef_burger.jpg';
 import coffee from './Images/coffee.jpg';
+import smokingpizza from './Images/smokingpizza.jpg';
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 let brakePoints = [300, 500,750];
 let elements = [];
@@ -48,7 +48,7 @@ class Gallery extends React.Component {
         <img className="image-element-class"  src={baker}/>
         </MDBCol>
         <MDBCol md="6">
-        <img className="image-element-class"  src={billie} />
+        <img className="image-element-class"  src={smokingpizza} />
         </MDBCol>
         </MDBRow>
       </MDBCol>

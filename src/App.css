@@ -46,3 +46,17 @@
   width: 100%;
   margin: 2%;
 }
+header h1{
+  font-family: Roboto;
+
+  color:rgba(255,162,0,1);
+  background-color: black;
+  font-size: 6vw;
+  text-align: center;
+  letter-spacing: 1.2vw;
+  white-space: 10vw;
+}
+header h5{
+  letter-spacing: 1.2vw;
+  font-size: 1.3vw;
+}
