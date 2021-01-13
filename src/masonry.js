@@ -26,6 +26,7 @@ const withs={
 
 
 class Gallery extends React.Component {
+
   render() {
     const childElements = elements.map(function (element) {
       return (
@@ -74,7 +75,13 @@ class Gallery extends React.Component {
       </MDBCol>
       </MDBRow>
       <MDBRow>
-      <MDBCol md="">
+      <MDBCol md="5">
+        <MDBRow>
+          <img className="image-element-class"  src={billie} />          
+        </MDBRow>
+        <MDBRow>
+          <img className="image-element-class"  src={billie} />          
+        </MDBRow>
       </MDBCol>
       <MDBCol md="7">
         <img className="image-element-class"  src={billie} />

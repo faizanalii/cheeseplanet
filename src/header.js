@@ -4,6 +4,7 @@ import logo from './Images/logo.png';
 import Menu from './components/menu';
 import Contact from './components/contact';
 import About from './components/about';
+import './App.css';
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +24,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <>        
-            <MDBNavbar overlay="purple-light" color="orange" fixed="top" dark expand="md" scrolling transparent>
+            <MDBNavbar overlay="purple-light" color="black" fixed="top" dark expand="md" scrolling transparent>
               <MDBNavbarBrand href="/">
                 <img src={logo} height="30" class="d-inline-block align-top" alt="Cheese Planet logo"/>
               </MDBNavbarBrand>

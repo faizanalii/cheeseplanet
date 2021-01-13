@@ -29,9 +29,9 @@ class App extends Component{
         <MDBCarouselItem itemId="1">
         <MDBView src={pizzawall}>
             <MDBMask overlay="purple-light" className="flex-center flex-column text-white text-center">
-              <h1 className="border-bottom border-dark">CHEESE PLANET</h1>
+              <h1 >CHEESE PLANET</h1>
               <br/>
-              <h5 >THE CHEESIEST PIZZA IN TOWN</h5>
+              <h5>THE CHEESIEST PIZZA IN TOWN</h5>
               
             </MDBMask>
         </MDBView>
@@ -60,12 +60,14 @@ class App extends Component{
         </MDBCarouselInner>
       </MDBCarousel>
         </header>
-
+        <br/>
         <main>
-
-          <h1>Best Pizza In Town</h1>
-       <Gallary/>
-       <h1>Test</h1>
+        <section>
+          <div className='text-center'>
+            <h1>Listen to your tongue....</h1>
+          </div>   
+          <Gallary/>
+        </section>
         </main>
       </div>
       </>

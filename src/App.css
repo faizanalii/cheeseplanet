@@ -36,8 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
 .test1{
-  padding:  3%;
+  padding-left: 1.5%;
+  padding-right: 3%;
   text-align: center;
 }
 .image-element-class {
@@ -58,5 +60,9 @@ header h1{
 }
 header h5{
   letter-spacing: 1.2vw;
-  font-size: 1.3vw;
+  
+}
+section h1{
+  color: white;
+  font-family: "Monospace","Courier New";
 }
