@@ -25,6 +25,8 @@ sociallinks=()=>
       <div>
 	        <SocialIcon  url='https://www.facebook.com/cheeseplanet.co'/><span>  </span>
             <SocialIcon  url='https://www.instagram.com/cheese_planet_co/'/><span> </span>
+            <SocialIcon url="https://api.whatsapp.com/send?phone=+923331777030"/><span> </span>
+            <SocialIcon url="mailto:vlogsjust2@gmail.com"/>
           </div>
         );
   }
@@ -115,11 +117,7 @@ sociallinks=()=>
             <a href="tel:+92 304 8141114" target="_blank">
               <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
               </a>
-              <p className="text-white">+92 304 8141114/312 520094</p>
-            </li>
-            <li>
-              <MDBIcon icon="envelope" size="2x" className="blue-text mt-4" />
-              <p className="text-white">contact@example.com</p>
+              <p className="text-white">+92 304 8141114 / 312 520094</p>
             </li>
           </ul>
         </MDBCol>

@@ -9,6 +9,7 @@ import fries from './Images/fries.jpg';
 import beef_burger from './Images/beef_burger.jpg';
 import coffee from './Images/coffee.jpg';
 import smokingpizza from './Images/smokingpizza.jpg';
+import paratha from './Images/paratha.jpg'
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 let brakePoints = [300, 500,750];
 let elements = [];
@@ -80,7 +81,7 @@ class Gallery extends React.Component {
           <img className="image-element-class"  src={billie} />          
         </MDBRow>
         <MDBRow>
-          <img className="image-element-class"  src={billie} />          
+          <img className="image-element-class"   src={paratha}  />          
         </MDBRow>
       </MDBCol>
       <MDBCol md="7">

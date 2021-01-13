@@ -6,6 +6,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 import {MDBCarouselItem,MDBCarouselInner,MDBCarousel} from 'mdbreact';
 import GlitchClip from 'react-glitch-effect/core/Clip';
 import GlitchText from 'react-glitch-effect/core/Text';
+import paratha from './Images/paratha.jpg';
 import './App.css';
 import Gallary from './masonry';
 class App extends Component{
