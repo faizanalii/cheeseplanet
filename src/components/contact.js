@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../header';
 import {MDBMask,MDBView,MDBContainer,  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 import {SocialIcon} from 'react-social-icons';
+import emailjs from 'emailjs-com';
 class Contact extends React.Component{
 	constructor(props){
 		super(props);
@@ -16,7 +17,15 @@ class Contact extends React.Component{
 	}
 		sendmsg=(e)=>{
 			e.preventDefault();
-			alert("hello");
+      emailjs.send('cheese_planet','cheese_planet',this.state,'user_YvrJzsphBuzUAGtTB1haF')
+      .then(()=>{
+          setTimeout(()=>{
+          alert("Message Sent");
+          this.setState({fname:'',lname:'',email:'',phoneno:'',subject:'',message:''});
+          },2000);
+      }).catch((error)=>{
+        console.log("Error",error);
+      });
 			console.log("state is", this.state);
 		}
 sociallinks=()=>
@@ -36,12 +45,9 @@ sociallinks=()=>
 				<Navbar/>
 	
 		<MDBContainer className="my-5" style={{paddingTop:'50px'}}>
-      <h2  className=" text-white h1-responsive font-weight-bold text-center my-5">
-        Contact us
+      <h2  className=" text-white h1-responsive text-center my-5" style={{letterSpacing:'10px'}}>
+        Contact Us
       </h2>
-      <p className=" text-white text-center w-responsive mx-auto pb-5">
-     	CHEESE PLANET, Best Pizza in Town!
-      </p>
       <MDBRow >
         <MDBCol md="9" className="md-0 mb-5">
           <form onSubmit={this.sendmsg}>
@@ -105,6 +111,7 @@ sociallinks=()=>
           </form>
         </MDBCol>
         <MDBCol md="3" className="text-center">
+          <br/><br/><br/>
           <ul className="list-unstyled mb-0">
             <li>
             <a href="https://www.google.com/maps/place/Cheese+Planet/@33.6520939,73.2264758,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfe964728791cf:0xdffe8467292003c9!8m2!3d33.6520895!4d73.2286645"
