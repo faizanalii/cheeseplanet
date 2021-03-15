@@ -11,7 +11,12 @@ import Menu from './components/menu';
 import Contact from './components/contact';
 import About from './components/about';
 import createBrowserHistory from 'history/createBrowserHistory';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import {itemscart} from './reducers';
+const store=createStore(itemscart);
 ReactDOM.render(
+	<Provider store={store}>
 	<Router history={createBrowserHistory()}>
         <Switch>
           <Route exact={true} path="/" component={App}/>
@@ -19,7 +24,8 @@ ReactDOM.render(
           <Route path="/menu" component={Menu}/>
           <Route path="/contact" component={Contact}/>          
         </Switch>
-      </Router>,
+      </Router>
+      </Provider>,
   document.getElementById('root')
 );
 

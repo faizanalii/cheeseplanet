@@ -6,7 +6,6 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 import {MDBCarouselItem,MDBCarouselInner,MDBCarousel} from 'mdbreact';
 import GlitchClip from 'react-glitch-effect/core/Clip';
 import GlitchText from 'react-glitch-effect/core/Text';
-import paratha from './Images/paratha.jpg';
 import './App.css';
 import Gallary from './masonry';
 class App extends Component{
@@ -30,7 +29,7 @@ class App extends Component{
         <MDBCarouselItem itemId="1">
         <MDBView src={pizzawall}>
             <MDBMask overlay="purple-light" className="flex-center flex-column text-white text-center">
-              <h1 >CHEESE PLANET</h1>
+              <h1>CHEESE PLANET</h1>
               <br/>
               <h5>THE CHEESIEST PIZZA IN TOWN</h5>
               
@@ -40,7 +39,7 @@ class App extends Component{
         <MDBCarouselItem itemId="2">
   
         <MDBView src={billie}>
-            <MDBMask overlay="purple-light" className="flex-center flex-column text-white text-center">
+            <MDBMask overlay="purple-light"  className="flex-center flex-column text-white text-center">
               <h1>CHEESE PLANET</h1>
               <br/>
               <h5>It will always stay visible on the top, even when you scroll down</h5>
@@ -49,7 +48,7 @@ class App extends Component{
         </MDBView>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
-        <MDBView src="https://mdbootstrap.com/img/Photos/Others/img%20(40).jpg">
+        <MDBView src={billie}>
             <MDBMask overlay="purple-light" className="flex-center flex-column text-white text-center">
               <h1>CHEESE PLANET</h1>
               <br/>
